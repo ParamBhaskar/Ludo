@@ -390,3 +390,8 @@ function clicking(id) {
     document.getElementById(id).addEventListener("click", function () { console.log("Clicked!") })
     return true;
 }
+
+document.getElementById("1").style.background="rgb(247, 98, 98)";
+document.getElementById("28").style.background="salmon";
+document.getElementById("15").style.background="rgb(79, 158, 189)";
+document.getElementById("14").style.background="skyblue";
