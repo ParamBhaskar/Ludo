@@ -322,9 +322,9 @@ function roll_A() {
                 document.getElementById((find_id_of_element("1A"))[0]).onclick = move_A(parseInt((find_id_of_element("1A"))[0]), num);
                 // (document.getElementById((find_id_of_element("1A"))[1]).onclick = move_A(parseInt((find_id_of_element("1A"))[1]), num));
 
-                document.getElementById((find_id_of_element("2A"))[0]).innerHTML = "1A";
+                
                 document.getElementById((parseInt((find_id_of_element("2A"))[0]) + num).toString()).innerHTML = "1A";
-
+                document.getElementById((find_id_of_element("2A"))[0]).innerHTML = "1A";
             }
         }
     }
@@ -367,8 +367,8 @@ function roll_B() {
                 document.getElementById((find_id_of_element("1B"))[0]).onclick = move_B(parseInt((find_id_of_element("1B"))[0]), num);
                 //document.getElementById((find_id_of_element("1B"))[1]).onclick = move_B(parseInt((find_id_of_element("1B"))[1]), num);
 
-                document.getElementById((find_id_of_element("2B"))[0]).innerHTML = "1B";
                 document.getElementById((parseInt((find_id_of_element("2B"))[0]) + num).toString()).innerHTML = "1B";
+                document.getElementById((find_id_of_element("2B"))[0]).innerHTML = "1B";
             }
         }
     }
