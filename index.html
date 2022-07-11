@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="score">
+        <p id="A"></p>
+        <p id="B"></p>
+    </div>
+    <table>
+        <tr class="row1">
+            <td id="1" class="cell"></td>
+            <td id="2" class="cell"></td>
+            <td id="3" class="cell"></td>
+            <td id="4" class="cell"></td>
+            <td id="5" class="cell"></td>
+            <td id="6" class="cell"></td>
+            <td id="7" class="cell"></td>
+            <td id="8" class="cell"></td>
+        </tr>
+        <tr class="column1">
+            <td id="28" class="cell"></td>
+            <td id="27" class="cell"></td>
+            <td id="26" class="cell"></td>
+            <td id="25" class="cell"></td>
+            <td id="24" class="cell"></td>
+            <td id="23" class="cell"></td>
+        </tr>
+        <tr class="column2">
+            <td id="9" class="cell"></td>
+            <td id="10" class="cell"></td>
+            <td id="11" class="cell"></td>
+            <td id="12" class="cell"></td>
+            <td id="13" class="cell"></td>
+            <td id="14" class="cell"></td>
+        </tr>
+        <tr class="row2">
+            <td id="22" class="cell"></td>
+            <td id="21" class="cell"></td>
+            <td id="20" class="cell"></td>
+            <td id="19" class="cell"></td>
+            <td id="18" class="cell"></td>
+            <td id="17" class="cell"></td>
+            <td id="16" class="cell"></td>
+            <td id="15" class="cell"></td>
+        </tr>
+    </table>
+    <button id="btn_A" onclick="roll_A()">Roll! Turn of A!</button>
+    <button id="btn_B" onclick="roll_B()">Roll! Turn of B!</button>
+    <div id="show"></div>
+    <div class="locker_A"><h2>Locker for A</h2></div>
+    <div class="locker_A" id="locker_A">2A</div>
+    <div class="locker_B"><h2>Locker for B</h2></div>
+    <div class="locker_B" id="locker_B">2B</div>
+    <script src="index.js"></script>
+</body>
+
+</html>
