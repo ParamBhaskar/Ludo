@@ -58,7 +58,7 @@ function lockerFree_A() {
         else if (document.getElementById("1").innerHTML == "") {
             document.getElementById("1").innerHTML = "1A";
         }
-        
+
     }
 }
 function lockerFree_B() {
@@ -301,8 +301,14 @@ function roll_A() {
                  else if (clicking(document.getElementById((find_id_of_element("1A"))[1]))) {
                      move_A(parseInt((find_id_of_element("1A"))[1]), num);
                  }*/
-                document.getElementById((find_id_of_element("1A"))[0]).onclick = move_A(parseInt((find_id_of_element("1A"))[0]), num);
-                // (document.getElementById((find_id_of_element("1A"))[1]).onclick = move_A(parseInt((find_id_of_element("1A"))[1]), num));
+                if (document.getElementById((find_id_of_element("2A"))[0]).innerHTML == "2A") {
+                    document.getElementById((parseInt((find_id_of_element("2A"))[0]) + num).toString()).innerHTML = "1A";
+                    document.getElementById((find_id_of_element("2A"))[0]).innerHTML = "1A";
+                }
+                else {
+                    document.getElementById((find_id_of_element("1A"))[0]).onclick = move_A(parseInt((find_id_of_element("1A"))[0]), num);
+                    // (document.getElementById((find_id_of_element("1A"))[1]).onclick = move_A(parseInt((find_id_of_element("1A"))[1]), num));
+                }
             }
         }
 
@@ -319,12 +325,14 @@ function roll_A() {
                 else if (clicking(document.getElementById((find_id_of_element("1A"))[1]))) {
                     move_A(parseInt((find_id_of_element("1A"))[1]), num);
                 }*/
-                document.getElementById((find_id_of_element("1A"))[0]).onclick = move_A(parseInt((find_id_of_element("1A"))[0]), num);
-                // (document.getElementById((find_id_of_element("1A"))[1]).onclick = move_A(parseInt((find_id_of_element("1A"))[1]), num));
-
-                
-                document.getElementById((parseInt((find_id_of_element("2A"))[0]) + num).toString()).innerHTML = "1A";
-                document.getElementById((find_id_of_element("2A"))[0]).innerHTML = "1A";
+                if (document.getElementById((find_id_of_element("2A"))[0]).innerHTML == "2A") {
+                    document.getElementById((parseInt((find_id_of_element("2A"))[0]) + num).toString()).innerHTML = "1A";
+                    document.getElementById((find_id_of_element("2A"))[0]).innerHTML = "1A";
+                }
+                else {
+                    document.getElementById((find_id_of_element("1A"))[0]).onclick = move_A(parseInt((find_id_of_element("1A"))[0]), num);
+                    // (document.getElementById((find_id_of_element("1A"))[1]).onclick = move_A(parseInt((find_id_of_element("1A"))[1]), num));
+                }
             }
         }
     }
@@ -353,8 +361,14 @@ function roll_B() {
                 // document.getElementById((find_id_of_element("1B"))[0]).onclick = move_B(parseInt((find_id_of_element("1B"))[0]), num);
             }
             else if (document.getElementById("locker_B").innerHTML == "") {
-                document.getElementById((find_id_of_element("1B"))[0]).onclick = move_B(parseInt((find_id_of_element("1B"))[0]), num);
-                //document.getElementById((find_id_of_element("1B"))[1]).onclick = move_B(parseInt((find_id_of_element("1B"))[1]), num);
+                if (document.getElementById((find_id_of_element("2B"))[0]).innerHTML == "2B") {
+                    document.getElementById((parseInt((find_id_of_element("2B"))[0]) + num).toString()).innerHTML = "1B";
+                    document.getElementById((find_id_of_element("2B"))[0]).innerHTML = "1B";
+                }
+                else {
+                    document.getElementById((find_id_of_element("1B"))[0]).onclick = move_B(parseInt((find_id_of_element("1B"))[0]), num);
+                    // (document.getElementById((find_id_of_element("1B"))[1]).onclick = move_B(parseInt((find_id_of_element("1B"))[1]), num));
+                }
             }
         }
         else {
@@ -364,11 +378,14 @@ function roll_B() {
                 move_B(parseInt((find_id_of_element("1B"))[0]), num);
             }
             else if (document.getElementById("locker_B").innerHTML == "") {
-                document.getElementById((find_id_of_element("1B"))[0]).onclick = move_B(parseInt((find_id_of_element("1B"))[0]), num);
-                //document.getElementById((find_id_of_element("1B"))[1]).onclick = move_B(parseInt((find_id_of_element("1B"))[1]), num);
-
-                document.getElementById((parseInt((find_id_of_element("2B"))[0]) + num).toString()).innerHTML = "1B";
-                document.getElementById((find_id_of_element("2B"))[0]).innerHTML = "1B";
+                if (document.getElementById((find_id_of_element("2B"))[0]).innerHTML == "2B") {
+                    document.getElementById((parseInt((find_id_of_element("2B"))[0]) + num).toString()).innerHTML = "1B";
+                    document.getElementById((find_id_of_element("2B"))[0]).innerHTML = "1B";
+                }
+                else {
+                    document.getElementById((find_id_of_element("1B"))[0]).onclick = move_B(parseInt((find_id_of_element("1B"))[0]), num);
+                    // (document.getElementById((find_id_of_element("1B"))[1]).onclick = move_B(parseInt((find_id_of_element("1B"))[1]), num));
+                }
             }
         }
     }
@@ -391,7 +408,7 @@ function clicking(id) {
     return true;
 }
 
-document.getElementById("1").style.background="rgb(247, 98, 98)";
-document.getElementById("28").style.background="salmon";
-document.getElementById("15").style.background="rgb(79, 158, 189)";
-document.getElementById("14").style.background="skyblue";
+document.getElementById("1").style.background = "rgb(247, 98, 98)";
+document.getElementById("28").style.background = "salmon";
+document.getElementById("15").style.background = "rgb(79, 158, 189)";
+document.getElementById("14").style.background = "skyblue";
